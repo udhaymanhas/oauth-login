@@ -15,7 +15,7 @@
       <div class="md-toolbar-tools content">
           <span class='special-text' >Oauth Login</span>
           <span flex></span>
-          <md-button ui-sref="Login"  >
+          <md-button ui-sref="login"  >
               Login
           </md-button>
         </div>
@@ -29,7 +29,10 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="middlewares/auth.middleware.js"></script>
     <script src="config/app.config.js"></script>
+    <script src="services/auth.service.js"></script>
+    <script src="services/user.service.js"></script>
     <script src="controllers/login.controller.js"></script>
     <script src="controllers/home.controller.js"></script>
   </body>

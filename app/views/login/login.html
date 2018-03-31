@@ -1,0 +1,35 @@
+<div layout="row" layout-align="center center">
+  <div>
+    <md-card>
+      <md-content class="md-padding">
+        <form name="loginForm" novalidate>
+          <div layout-gt-sm="row">
+            <md-input-container>
+              <label>Username</label>
+              <input required ng-model="login.username" type="text">
+              <div ng-messages="loginForm.login.username.$error">
+                <div ng-message="required">Field required.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div layout-gt-sm="row">
+            <md-input-container>
+              <label>Password</label>
+              <input required  ng-model="login.password" type="password">
+              <div ng-messages="loginForm.login.password.$error">
+                <div ng-message="required">Field required.</div>
+              </div>
+            </md-input-container>
+          </div>
+          <div layout-gt-sm="row" layout-align="center center">
+            <md-input-container>
+              <md-button ng-disabled="loginForm.$invalid || submitProgress" class="md-raised md-primary" ng-click="submit()">
+                <span ng-show="!submitProgress">Login</span>
+                <md-progress-circular style="margin:auto" ng-show="submitProgress" class="md-warn md-hue-2" md-diameter="20px"></md-progress-circular>
+            </md-input-container>
+          </div>
+        </form>
+      </md-content>
+    </md-card>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "oauth-login",
+  "version": "1.0.0",
+  "description": "\"# oauth-login\"",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gulp develop",
+    "preinstall": "npm install gulp -g && npm install bower -g"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udhaymanhas/oauth-login.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udhaymanhas/oauth-login/issues"
+  },
+  "homepage": "https://github.com/udhaymanhas/oauth-login#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}

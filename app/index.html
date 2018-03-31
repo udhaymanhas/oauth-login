@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
+  </head>
+  <body ng-app="oath-login">
+    <md-toolbar class="md-whiteframe-2dp">
+      <div class="md-toolbar-tools content">
+          <span class='special-text' >Oauth Login</span>
+          <span flex></span>
+          <md-button ui-sref="Login"  >
+              Login
+          </md-button>
+        </div>
+    </md-toolbar>
+    <div layout="row">
+      <div flex="20"></div>
+      <div flex="70">
+        <div ui-view></div>
+      </div>
+      <div flex="20"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="config/app.config.js"></script>
+    <script src="controllers/login.controller.js"></script>
+    <script src="controllers/home.controller.js"></script>
+  </body>
+</html>
